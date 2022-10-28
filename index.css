@@ -1,0 +1,73 @@
+.text-platzi {
+    /* !important -> Pisa cualquier otro color, en este caso, que haya */
+    color: #97c93e !important
+}
+
+.btn-platzi {
+    background-color: #97c93e;
+    color: white;
+}
+
+.btn-platzi:hover {
+    background-color: #82ad36;
+}
+
+.badges {
+    text-align: right;
+}
+
+#header img{
+    width: 80px;
+}
+
+#main .carousel-inner img{
+    /* 70vh (viewport height) - Ocupará el 70% del alto de la pantalla*/
+    max-height: 70vh;
+    /* La imagen se estiraba, con esto mantiene la proporción */
+    object-fit: cover;
+    /* Las imgs se muestran en 70% grayscale */
+    filter: grayscale(70%);
+}
+
+#carousel {
+    position: relative;
+}
+
+#carousel .overlay {
+    /* Para que el overlay se expanda por todo el alto y ancho del carousel */
+    position: absolute;
+    /* Sin espacios */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* Todo negro pero con transparencia de 0.5 */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    /* Esta propiedad sirve para controlar el orden de los elementos, mientras mayor es el valor, mayor es la prioridad. */
+    z-index: 1;
+}
+
+/* Hacemos que el contenido ocupe todo el carousel  */
+#carousel .overlay .container,
+#carousel .overlay .row {
+    height: 100%;
+}
+
+#place-time {
+    background-color: #343a40;
+    color: white;
+}
+
+#place-time img {
+    max-width: 100%;
+}
+
+#footer {
+    background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
+}
+
+#footer a {
+    text-decoration: none;
+    color: whitesmoke;
+}
